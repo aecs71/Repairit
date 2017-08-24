@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include layout="@layout/toolbar" android:id="@+id/contactToolbar"></include>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_marginTop="31dp"
+        android:id="@+id/contactMobile"
+        android:layout_below="@+id/contactEmail"
+        android:layout_alignLeft="@+id/contactEmail"
+        android:layout_alignStart="@+id/contactEmail"
+        android:hint="Phone No"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginTop="31dp"
+        android:id="@+id/contactEmail"
+        android:layout_below="@+id/contactName"
+        android:layout_alignLeft="@+id/contactName"
+        android:layout_alignStart="@+id/contactName"
+        android:hint="Email Address"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_marginTop="31dp"
+        android:id="@+id/contactCity"
+        android:layout_below="@+id/contactMobile"
+        android:layout_alignLeft="@+id/contactMobile"
+        android:layout_alignStart="@+id/contactMobile"
+        android:hint="City"/>
+
+    <Button
+        android:text="Device Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:id="@+id/deviceButton"
+        android:layout_below="@+id/contactCity"
+        android:layout_centerHorizontal="true"
+        style="@style/ButtonTheme"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="40dp"
+        android:id="@+id/contactName"
+        android:hint="Full Name"
+        android:layout_below="@+id/contactToolbar"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

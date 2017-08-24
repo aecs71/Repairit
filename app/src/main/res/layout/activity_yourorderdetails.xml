@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".YourOrdersActivity">
+<RelativeLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_20sdp"
+        android:layout_alignBaseline="@+id/order_id_name"
+        android:layout_alignBottom="@+id/order_id_name"
+        android:layout_toRightOf="@+id/order_id_name"
+        android:layout_toEndOf="@+id/order_id_name"
+        android:id="@+id/orderid_no" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Id :"
+        android:textSize="@dimen/_20sdp"
+        android:id="@+id/order_id_name"
+        android:layout_below="@+id/order_details"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Date :"
+        android:textSize="@dimen/_20sdp"
+        android:id="@+id/order_datetxt"
+        android:layout_below="@+id/order_id_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_20sdp"
+        android:layout_alignBaseline="@+id/order_datetxt"
+        android:layout_alignBottom="@+id/order_datetxt"
+        android:layout_toRightOf="@+id/order_datetxt"
+        android:layout_toEndOf="@+id/order_datetxt"
+        android:id="@+id/orderid_dateval"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Name :"
+        android:textSize="@dimen/_20sdp"
+        android:id="@+id/mobile_nametxt"
+        android:layout_below="@+id/order_datetxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exp "
+        android:textSize="@dimen/_20sdp"
+        android:id="@+id/expected_delivery_date"
+        android:layout_below="@+id/mobile_nametxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Status :"
+        android:textSize="@dimen/_20sdp"
+        android:id="@+id/order_status"
+        android:layout_below="@+id/expected_delivery_date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_20sdp"
+        android:layout_alignBaseline="@+id/mobile_nametxt"
+        android:layout_alignBottom="@+id/mobile_nametxt"
+        android:layout_toRightOf="@+id/mobile_nametxt"
+        android:layout_toEndOf="@+id/mobile_nametxt"
+        android:id="@+id/mobile_nameval"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_20sdp"
+        android:layout_alignBaseline="@+id/expected_delivery_date"
+        android:layout_alignBottom="@+id/expected_delivery_date"
+        android:layout_toRightOf="@+id/expected_delivery_date"
+        android:layout_toEndOf="@+id/expected_delivery_date"
+        android:id="@+id/expdateval"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_20sdp"
+        android:layout_alignBaseline="@+id/order_status"
+        android:layout_alignBottom="@+id/order_status"
+        android:layout_toRightOf="@+id/order_status"
+        android:layout_toEndOf="@+id/order_status"
+        android:id="@+id/order_statusval"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Details"
+        android:textSize="@dimen/_25sdp"
+        android:id="@+id/order_details"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
+    <include layout="@layout/navigation_view"></include>
+</android.support.v4.widget.DrawerLayout>

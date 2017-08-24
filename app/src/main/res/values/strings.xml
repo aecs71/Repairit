@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RepairIt</string>
+    <string name="ScheduleRepair">Schedule a repair</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="field_required">This Field is Required</string>
+    <string name="incorrect_email_format">Email address is invalid</string>
+    <string name="error_incorrect_password">Incorrect Email Id or Password</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="your_order">Your Order</string>
+    <string name="about_us">About Us</string>
+    <string name="contact_us">Contact US</string>
+    <string name="logout">Logout</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar" android:id="@+id/deviceToolbar"></include>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_marginTop="45dp"
+        android:id="@+id/pickupDate"
+        android:layout_below="@+id/deviceToolbar"
+        android:layout_centerHorizontal="true"
+        android:hint="Date"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:id="@+id/pickupAddress"
+        android:layout_below="@+id/pickupDate"
+        android:layout_centerHorizontal="true"
+        android:hint="Address"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:id="@+id/pickupPincode"
+        android:layout_below="@+id/landmark"
+        android:layout_centerHorizontal="true"
+        android:hint="Pincode"/>
+
+    <Button
+        android:text="Schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pickupPincode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/schedule"
+        style="@style/ButtonTheme"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/landmark"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/pickupAddress"
+        android:layout_alignLeft="@+id/pickupAddress"
+        android:layout_alignStart="@+id/pickupAddress"
+        android:hint="Landmark"/>
+
+    <TextView
+        android:text="Pick-up Details:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/pickup"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/deviceToolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/blue"/>
+
+
+    </RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_below="@+id/deviceToolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:id="@+id/deviceType"
+        android:hint="Device type Mobile/Tab"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_below="@+id/deviceType"
+        android:layout_alignLeft="@+id/deviceType"
+        android:layout_alignStart="@+id/deviceType"
+        android:layout_marginTop="20dp"
+        android:id="@+id/deviceBrand"
+        android:hint="Brand"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_below="@+id/deviceModel"
+        android:layout_alignRight="@+id/deviceModel"
+        android:layout_alignEnd="@+id/deviceModel"
+        android:layout_marginTop="20dp"
+        android:id="@+id/deviceIssue"
+        android:hint="Issue"
+        />
+
+    <Button
+        android:text="Schedule Repair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scheduleRepair"
+        style="@style/ButtonTheme"
+        android:layout_below="@+id/deviceIssue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:id="@+id/deviceModel"
+        android:layout_below="@+id/deviceBrand"
+        android:layout_alignLeft="@+id/deviceBrand"
+        android:layout_alignStart="@+id/deviceBrand"
+        android:hint="Model"/>
+
+    <include layout="@layout/toolbar" android:id="@+id/deviceToolbar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></include>
+
+
+</RelativeLayout>
